@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color:pink;
+        }
+        li{
+            list-style-type: none;
+            display: inline;
+            margin-right: 20px;
+            font-size: 25px;
+        }
+        a:link{
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(144, 209, 155);
+            text-decoration: none;
+        }
+        li>ul{
+            display: none;
+        }
+        li:hover ul{
+            display: block;
+            position: absolute;
+            left: 200px;
+            background-color:rgb(144, 132, 211);
+            margin: 0;
+        }
+        li:hover ul li a:link{
+            display: block;
+        }
+    </style>
+        <nav>
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">Introdution>> </a></li>
+            <li><a href="#">Portfolio>></a>
+            <ul>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">Web & User Interface Desing</a></li>
+                <li><a href="#">ENERGY</a></li>
+            </ul>
+        </li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
